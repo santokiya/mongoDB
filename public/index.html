@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mongo DB</title>
+
+    <style>
+        body {
+            background-image: url("/assets/images/nyt.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 2cm 4cm 3cm 4cm;
+        }
+        
+        h3 {
+            color: maroon;
+        }
+        
+        #articles {
+            display: inline-block;
+            overflow: auto;
+            width: 50%;
+            height: 450px;
+            padding-left: 10%;
+            float: center;
+            background-color: rgb(203, 204, 207);
+            color: rgb(218, 131, 131);
+            font-weight: bold;
+        }
+        
+        #notes {
+            float: right;
+            width: 40%;
+            padding-right: 10%;
+        }
+        
+        textarea,
+        input {
+            display: block;
+            width: 50%;
+            background-color: rgb(247, 246, 239);
+        }
+        
+        input {
+            height: 36px;
+            font-size: 24px;
+        }
+        
+        textarea {
+            height: 200px;
+            font-size: 18px;
+        }
+    </style>
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1>News Scraper</h1>
+        <div><button type="button" id="scrape">Scrape for the news</button> </div>
+    </div>
+
+    <div id="articles"></div>
+    <div id="notes"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
